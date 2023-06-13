@@ -59,8 +59,8 @@ jobs:
 
     - name: Copy index configuration files
       run: |
-        cp ./Marlin-Configurations/config/examples/Index/REV_03/Configuration.h ./Marlin/Marlin/
-        cp ./Marlin-Configurations/config/examples/Index/REV_03/Configuration_adv.h ./Marlin/Marlin/
+        cp ./Marlin-Configurations/config/examples/Opulo/Lumen_REV3/Configuration.h ./Marlin/Marlin/
+        cp ./Marlin-Configurations/config/examples/Opulo/Lumen_REV3/Configuration_adv.h ./Marlin/Marlin/
 
     - name: Ensure Experimental I2C is Enabled
       run: |
