@@ -20,7 +20,8 @@ jobs:
     - name: Check out Marlin
       uses: actions/checkout@v3
       with:
-        repository: DelphiXE5/Configurations
+        repository: MarlinFirmware/Marlin
+        ref: 2.0.9.4
         path: Marlin
         fetch-depth: 1
         lfs: 'true'
@@ -59,8 +60,8 @@ jobs:
 
     - name: Copy index configuration files
       run: |
-        cp ./Marlin-Configurations/config/examples/Opulo/Lumen_REV3/Configuration.h ./Marlin/Marlin/Configuration.h
-        cp ./Marlin-Configurations/config/examples/Opulo/Lumen_REV3/Configuration_adv.h ./Marlin/Marlin/Configuration_adv.h
+        cp ./Marlin-Configurations/config/examples/Index/REV_03/Configuration.h ./Marlin/Marlin/
+        cp ./Marlin-Configurations/config/examples/Index/REV_03/Configuration_adv.h ./Marlin/Marlin/
 
     - name: Ensure Experimental I2C is Enabled
       run: |
