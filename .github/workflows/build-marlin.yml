@@ -20,8 +20,7 @@ jobs:
     - name: Check out Marlin
       uses: actions/checkout@v3
       with:
-        repository: MarlinFirmware/Marlin
-        ref: 2.0.9.4
+        repository: DelphiXE5/Configurations
         path: Marlin
         fetch-depth: 1
         lfs: 'true'
@@ -30,8 +29,7 @@ jobs:
     - name: Check out Marlin-Configurations
       uses: actions/checkout@v3
       with:
-        repository: MarlinFirmware/Configurations
-        ref: 2.0.9.4
+        repository: DelphiXE5/Configurations
         path: Marlin-Configurations
 
     - name: Cache pip
